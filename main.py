@@ -1,0 +1,20 @@
+f=open("students.txt","w")
+f.write("Roy - Maths\n")
+f.write("Anya - English\n")
+f.write("Sam - Science\n")
+f.close()
+
+f=open("students.txt","a")
+f.write("Liam - History\n")
+f.write("Olivia - Art\n")
+f.close()
+
+f=open("students.txt","r")
+print("All students:")
+print(f.read())
+f.close()
+
+f=open("students.txt","r+")
+data=f.read()
+f.write("\nNew student added: Noah - Geography\n")
+f.close()
